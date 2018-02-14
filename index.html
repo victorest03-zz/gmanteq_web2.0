@@ -26,7 +26,7 @@
                 <li><a href="#home">INICIO</a></li>
                 <li><a href="#queesgmanteq">¿QUE ES GMANTEQ?</a></li>
                 <li><a href="#porqueelegirnos">VENTAJAS Y BENEFICIOS</a></li>
-                <li><a href="#">SOPORTE</a></li>
+                <li><a href="/hola">SOPORTE</a></li>
                 <li><a href="#">PRODUCTOS</a></li>
                 <li><a href="#">VIDEO TUTORIAL</a></li>
                 <li><a href="#contactanos">CONTÁCTANOS</a></li>
@@ -279,10 +279,27 @@
     <footer class="footer">
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-        document.querySelector(".nav__header__toggle").addEventListener("click",e=>{
-            var $toggle = e.target.closest(".nav");
-            $toggle.classList.toggle("active");
+        // document.querySelector("").addEventListener("click",e=>{
+        //     var $toggle = e.target.closest(".nav");
+        //     $toggle.classList.toggle("active");
+        // })
+
+        $(function(){
+            $(".nav__header__toggle").on("click",function(){
+                $(this).parents(".nav").toggleClass("active")
+            })
+
+            $('.nav ul li a').on('click', function(e){
+                if($(this).attr("href").substr(0,1) == "#"){
+                    e.preventDefault();
+                    var target= $($(this).attr("href"));
+                    $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
         })
     </script>
 </body>
