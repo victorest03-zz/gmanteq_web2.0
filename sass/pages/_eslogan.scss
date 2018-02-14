@@ -1,0 +1,29 @@
+.main__eslogan{
+    background-color: #162632;
+    .eslogan{
+        padding: 2em 1em 0 1em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__texto{
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+            line-height: 1.3em;
+        }
+        @include tablet {
+            flex-direction: row;
+            &__img{
+                width: 25%;
+                margin-bottom: 0;
+            }
+            &__texto{
+                width: 75%;
+                padding: 0 2em;
+            }
+        }
+    }
+}

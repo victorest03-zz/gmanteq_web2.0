@@ -1,0 +1,21 @@
+.button{
+    font-family: Bebas Neue,sans-serif;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-repeat: 0.2em;
+    color: #E4B535;
+    background-color: transparent;
+    border: solid 2px #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    // &:hover{
+    //     background: rgba(0);
+    // }
+
+    &.primary{
+        border: none;
+        color: #fff;
+        background-color: #2575B7;
+    }
+}

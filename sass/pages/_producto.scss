@@ -1,0 +1,66 @@
+.main__producto{
+    .producto{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__image{
+            max-width: 800px;
+            margin-top: -15em;
+        }
+
+        &__title,&__subtitle{
+            text-align: center;
+        }
+
+        &__title{
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+
+        &__subtitle{
+            font-size: 2em;
+            font-style: Black;
+            font-weight: bold;
+            margin-bottom: 1em;
+            span{
+                display: inline;
+                padding: 0 1em;
+                border-bottom: solid 2px #000;
+            }
+        }
+        &__body{
+            display: flex;
+            flex-wrap: wrap;
+            &__item{
+                width: 100%;
+                display: flex;
+                margin-bottom: 1.5em;
+                &__img{
+                    width: 15%;
+                }
+                &__body{
+                    width: 85%;
+                    padding-left: .5em;
+                }
+                &__title{
+                    font-weight: bold;
+                    font-size: 1em;
+                    margin-bottom: 1em;
+                }
+                &__parrafo{
+                    font-size: .8em;
+                }
+                @include tablet {
+                    padding: 0 1em;
+                    width: 50%;
+                }
+                @include desktop {
+                    width: 33.33333333%;
+                }
+            }
+
+            
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.main__pruebalogratis{
+    background-color: #162632;
+    .pruebalogratis{
+        padding: 3em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        &__title{
+            font-size: 2em;
+            padding-bottom: .2em;
+            span{
+                color: #E4B535;
+                font-weight: bold;
+            }
+        }
+        &__text{
+            font-size: 1.5em;
+            padding-bottom: 1em;
+            span{
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+        &__button{
+            button{
+                font-size: 1.3em;
+                padding: 0.5em 2em;
+            }
+        }
+    }
+}

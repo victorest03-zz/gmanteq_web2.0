@@ -1,0 +1,24 @@
+ul.check_list{
+    list-style:none;
+    li{
+        padding: .2em 0 .2em 1.5em;
+        color: #214A67;
+        font-weight:500;
+        position: relative;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-image: url(./../img/ic_check.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+        }
+
+        &:nth-child(even){
+            color: #000000;
+        }
+    }
+}
