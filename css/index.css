@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url("../font/Avenir/Avenir-Book.eot?");
+  src: url("../font/Avenir/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("../font/Avenir/Avenir-Book.woff2") format("woff2"), url("../font/Avenir/Avenir-Book.woff") format("woff"), url("../font/Avenir/Avenir-Book.ttf") format("truetype"), url("../font/Avenir/Avenir-Book.svg#Avenir") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../font/Avenir/Avenir-Black.eot?");
+  src: url("../font/Avenir/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../font/Avenir/Avenir-Black.woff2") format("woff2"), url("../font/Avenir/Avenir-Black.woff") format("woff"), url("../font/Avenir/Avenir-Black.ttf") format("truetype"), url("../font/Avenir/Avenir-Black.svg#Avenir") format("svg");
+  font-weight: bold;
+  font-style: Black;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../font/Avenir/Avenir-Medium.eot?");
+  src: url("../font/Avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../font/Avenir/Avenir-Medium.woff2") format("woff2"), url("../font/Avenir/Avenir-Medium.woff") format("woff"), url("../font/Avenir/Avenir-Medium.ttf") format("truetype"), url("../font/Avenir/Avenir-Medium.svg#Avenir") format("svg");
+  font-weight: normal;
+  font-style: Medium;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../font/Bebas Neue/BebasNeueRegular.eot?");
+  src: url("../font/Bebas Neue/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../font/Bebas NeueAvenir/BebasNeueRegular.woff2") format("woff2"), url("../font/Bebas Neue/BebasNeueRegular.woff") format("woff"), url("../font/Bebas Neue/BebasNeueRegular.ttf") format("truetype"), url("../font/Bebas Neue/BebasNeueRegular.svg#Avenir") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   box-sizing: border-box;
   font-family: sans-serif;
