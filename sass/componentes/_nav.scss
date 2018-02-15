@@ -1,7 +1,20 @@
 .nav{
-    display: flex;
-    flex-direction: column;
-    min-height: 64px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    .nav__container{
+        display: flex;
+        flex-direction: column;
+        min-height: 64px;
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #dfe0e0;
+        }
+    }
+
     &__header{
         background: #ffffff;
         display: flex;
@@ -69,7 +82,7 @@
         position: absolute;
         width: 100%;
         background-color: #2575B7;
-        top: -100%;
+        top: -100vh;;
         ul{
             list-style:none;
             li{
@@ -135,10 +148,9 @@
             top: 64px;
         }
     }
+}
 
-    @include desktop {
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #dfe0e0;
-    }
+.nav + main>section{
+    padding-top: 4em;
+    padding-bottom: 4em;
 }

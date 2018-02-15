@@ -11,26 +11,28 @@
 </head>
 <body>
     <nav class="nav">
-        <header class="nav__header">
-            <div class="nav__header__logo">
-                <a href="#">
-                    <img src="./img/logo.png" alt="GManteq">
-                </a>
+        <div class="nav__container">
+            <header class="nav__header">
+                <div class="nav__header__logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="GManteq">
+                    </a>
+                </div>
+                <div class="nav__header__toggle">
+                    <div class="nav__header__toggle__icon"></div>
+                </div>
+            </header>
+            <div class="nav__body">
+                <ul>
+                    <li><a href="#home">INICIO</a></li>
+                    <li><a href="#queesgmanteq">¿QUE ES GMANTEQ?</a></li>
+                    <li><a href="#porqueelegirnos">VENTAJAS Y BENEFICIOS</a></li>
+                    <li><a href="/hola">SOPORTE</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="#">VIDEO TUTORIAL</a></li>
+                    <li><a href="#contactanos">CONTÁCTANOS</a></li>
+                </ul>
             </div>
-            <div class="nav__header__toggle">
-                <div class="nav__header__toggle__icon"></div>
-            </div>
-        </header>
-        <div class="nav__body">
-            <ul>
-                <li><a href="#home">INICIO</a></li>
-                <li><a href="#queesgmanteq">¿QUE ES GMANTEQ?</a></li>
-                <li><a href="#porqueelegirnos">VENTAJAS Y BENEFICIOS</a></li>
-                <li><a href="/hola">SOPORTE</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="#">VIDEO TUTORIAL</a></li>
-                <li><a href="#contactanos">CONTÁCTANOS</a></li>
-            </ul>
         </div>
     </nav>
     <main class="main">
@@ -298,6 +300,7 @@
                     $('html, body').stop().animate({
                     scrollTop: target.offset().top
                     }, 1000);
+                    $(this).parents(".nav").removeClass("active")
                 }
             });
         })
