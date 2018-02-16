@@ -1,6 +1,7 @@
 .main__queesgmanteq{
+    padding-bottom: 0 !important;
     .queesgmanteq{
-        padding: 1em;
+        padding: 0 1em;
         &__title{
             font-size: 1.8em;
             font-style: Black;
@@ -13,6 +14,14 @@
             line-height: 1.4em;
             margin-bottom: 2rem;
             text-align: center;
+        }
+        &__infografia{
+            img{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 992px;
+            }
+            
         }
     }
 }

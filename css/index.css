@@ -455,7 +455,7 @@ ul.check_list li:nth-child(even) {
 }
 
 .main__pruebalogratis .pruebalogratis {
-  padding: 3em 1em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,8 +488,12 @@ ul.check_list li:nth-child(even) {
   padding: 0.5em 2em;
 }
 
+.main__queesgmanteq {
+  padding-bottom: 0 !important;
+}
+
 .main__queesgmanteq .queesgmanteq {
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .main__queesgmanteq .queesgmanteq__title {
@@ -507,13 +511,19 @@ ul.check_list li:nth-child(even) {
   text-align: center;
 }
 
+.main__queesgmanteq .queesgmanteq__infografia img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 992px;
+}
+
 .main__personalizacion {
   background-color: #DDDDDD;
 }
 
 .main__personalizacion .personalizacion {
   width: 100%;
-  padding: 2em 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,7 +556,7 @@ ul.check_list li:nth-child(even) {
 }
 
 .main__preview .preview {
-  padding: 2em 1em;
+  padding: 0 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -578,10 +588,11 @@ ul.check_list li:nth-child(even) {
 
 .main__eslogan {
   background-color: #162632;
+  padding-bottom: 0 !important;
 }
 
 .main__eslogan .eslogan {
-  padding: 2em 1em 0 1em;
+  padding: 0 1em 0 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -612,7 +623,7 @@ ul.check_list li:nth-child(even) {
 }
 
 .main__contactanos .contactanos {
-  padding: 3em 1em;
+  padding: 0 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
