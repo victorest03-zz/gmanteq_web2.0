@@ -87,6 +87,7 @@
             list-style:none;
             li{
                 margin-bottom: 0;
+                position: relative; 
                 a{
                     text-decoration: none;
                     color: #ffffff;
@@ -95,13 +96,37 @@
                     border-bottom: 1px solid hsla(180,2%,88%,.4);
                     font-size: 1em;
                     padding: .8em 1em;
-                    &:hover{
-                        color: #E4B535;
-                        border-bottom: solid 2px #eee;
-                    }
-
+                    
                     @include desktop {
                         font-size: .8em;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 3px;
+                            background-color: #2575B7;
+                            left: 50%;
+                            bottom: 0;
+                            transition-duration: .5s;
+    
+                        }
+    
+                        &:hover::after{
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+
+                &.active{
+                    @include desktop{
+                        a{
+                            &::after{
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }
