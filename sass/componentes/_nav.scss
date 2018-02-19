@@ -12,6 +12,7 @@
             flex-direction: row;
             justify-content: space-between;
             border-bottom: 1px solid #dfe0e0;
+            padding: 0 2em;
         }
     }
 
@@ -34,6 +35,7 @@
                     height: 50px;
                 }
             }
+            align-self: center;
         }
         &__toggle{
             display: flex;

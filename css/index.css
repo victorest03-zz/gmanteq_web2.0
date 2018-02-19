@@ -97,6 +97,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #dfe0e0;
+    padding: 0 2em;
   }
 }
 
@@ -113,6 +114,10 @@ img {
 .nav__header__logo, .nav__header__toggle {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.nav__header__logo {
+  align-self: center;
 }
 
 .nav__header__logo a {
