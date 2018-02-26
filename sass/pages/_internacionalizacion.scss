@@ -1,37 +1,40 @@
-.main__preview{
-    .preview{
-        padding: 0 1em;
+.main__internacionalizacion{
+    background-color: #062230;
+    .internacionalizacion{
+        padding: 0 1em 0 1em;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         &__texto{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            p{
-                font-weight:600;
-                font-size: 1.7em;
-                line-height: 1.3em;
-                text-align: center;
-                width: 100%;
+            color: #ffffff;
+            text-align: center;
+            h2{
+                font-size: 2.5em;
             }
-
+            p{
+                font-size: 1.3em;
+                line-height: 1.3em;
+            }
             button{
                 margin-top: 1.5em;
             }
         }
 
+        &__img{
+            margin-top: 4em;
+        }
+
         @include tablet {
             flex-direction: row;
             &__img{
-                width: 45%;
-                margin-bottom: 0;
+                width: 40%;
+                margin-top: -4em;
+                margin-bottom: -4em;
             }
             &__texto{
-                width: 55%;
-                text-align: left;
+                width: 60%;
                 padding: 0 2em;
             }
         }
